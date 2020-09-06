@@ -5,7 +5,7 @@ class App extends React.Component {
       { id: 2, name: "kawa", active: true },
       { id: 3, name: "woda", active: false },
       { id: 4, name: "sok", active: false },
-      { id: 5, name: "lemoniada", active: false },
+      { id: 5, name: "lemoniada", active: true },
       { id: 6, name: "herbata", active: false },
     ],
   };
@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Header items={this.state.items} />
-        <ListItems />
+        <ListItems items={this.state.items} />
       </React.Fragment>
     );
   }
